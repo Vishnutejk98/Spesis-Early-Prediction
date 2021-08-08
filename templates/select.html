@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <title>Sepsis Early Prediction</title>
+</head>
+<style>
+    html,
+    body {
+        height: 100%;
+    }
+
+    .container {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        border: none;
+    }
+
+    .jumbotron {
+        background-color: transparent;
+        padding: 0px;
+    }
+</style>
+
+<body class="bg-dark">
+    <div class="container bg-dark">
+        <div class="d-flex justify-content-center">
+            <div class="d-flex justify-content-center" style="width:80%;">
+
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="jumbotron jumbotron-fluid ">
+                            <div class="container text-center" style="flex-direction: column;">
+                                <div class="card" style="width: 70rem;">
+                                    <div class="card-body bg-dark text-white">
+                                        <h3 class="card-title">EARLY PREDICTION OF SEPSIS FROM CLINICAL DATA</h3>
+                                        <h6 class="card-subtitle mb-2 text-muted">Sepsis is a major public health
+                                            concern with significant morbidity, mortality, and healthcare expenses</h6>
+                                        <div class="row mt-5">
+                                            <div class="col-md-6">
+                                                <h4>Deep Data Prediction</h4>
+                                                <p class="card-text text-muted">Deep Data Prediction, Use 40 types of Clinical Data and would Analyse the result.</p>
+                                                <button type="button" class="btn btn-primary" onclick="window.location.href='{{ url_for( 'deepanalysis' ) }}'">Proceed</button>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <h4>Smart Data Prediction</h4>
+                                                <p class="card-text text-muted">Smart Data Prediction, Use 10 types of Clinical Data and would Analyse the result.</p>
+                                                <button type="button" class="btn btn-primary" onclick="window.location.href='{{ url_for('smartanalysis') }}'">Proceed</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
